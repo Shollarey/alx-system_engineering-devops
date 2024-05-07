@@ -34,11 +34,11 @@ defaults
   timeout server 15s
   timeout http-request 10s
 
-frontend damilolanuga-tech-frontend
+frontend shollarey-tech-frontend
     bind *:80
-    default_backend damilolanuga-tech-backend
+    default_backend shollarey-tech-backend
 
-backend damilolanuga-tech-backend
+backend shollarey-tech-backend
     balance roundrobin
     server 151666-web-01 54.167.148.198:80 check
     server 151666-web-02 34.201.61.181:80 check
